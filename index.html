@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta tags -->
+        <meta name="author" content="mor">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta charset="UTF-8">
+
+        <!-- title & favicon -->
+        <title>
+            Tagide projekt
+        </title>
+        <link rel="icon"
+              type="image/ico"
+              href="favicon.ico">
+
+        <!-- external css file -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- base -->
+        <base href="images/" target="_blank">
+    </head>
+    <body>
+        <header>
+            <h1>h1 header</h1>
+            <h2>h2 header</h2>
+            <h3>h3 header</h3>
+            <a href="#">See on <abbr title="abbr ja link">link ja abbreviation samal ajal</abbr></a>
+            <h4>article tag</h4>
+            <article>
+                Tegemist on väga pikka tekstiga ogauighadfuighoiudshfileuf
+                faosijfioadsjfoisjdfoijdslknfrefa
+                fdosmosignrgounjksdnfoiemasdifnoeiasdnfjkcu
+            </article>
+            <h5>address tag</h5>
+            <address>
+                Kirjutatud: <a href="morten.ehari@khk.ee">Morten Ehari</a>.<br>
+                Koduleht:<br>
+                totallylegitwebsite.legit<br>
+            </address>
+            <h6>aside tag</h6>
+            <aside>
+                ?
+            </aside>
+            <h5>audio tag</h5>
+            <audio>
+                ?
+            </audio>
+            <!-- area tag ja cite tag -->
+            <h4>area tag</h4>
+            <p><img src="pilt.jpg" width="200" height="200" alt="Yoda" usemap="#yoda"><br>
+            Vajutades vasakule ülesse nurka tuleb <cite>Yoda</cite> pilt, vajutades
+            paremale alumisse nurka tuleb Darth Vaderi pilt.</p>
+            <map name="yoda">
+                <area shape="circle" coords="10,10,10" href="yoda.jpg" alt="Yoda">
+                <area shape="circle" coords="190,190,10" href="darthvader.jpg" alt="Darth Vader">
+            </map>
+        </header>
+        <main>
+            <blockquote cite="postimees.ee">
+            Tegemist on blockquotiga postimees.ee'st
+            </blockquote>
+            <embed src="pilt.jpg"></embed>
+            <hr>
+            <bdo dir="rtl">
+                paremalt vasakule liikuv tekst
+            </bdo>
+            <ul>
+            <li>Kasutaja <bdi>oop</bdi>: over 9000 points</li>
+            <li>Kasutaja <bdi>tore</bdi>: 2999 points</li>
+            <li>Kasutaja <bdi>إيان</bdi>: 1000 points</li>
+        </ul>
+            <button type="button">See on nupp</button>
+            <canvas id="testCanvas">
+                Siin on tegemist canvas'ega
+            </canvas>
+            <table border="1px solid black">
+                <colgroup>
+                    <col span="2" style="background-color:green">
+                    <col style="background-color:blue">
+                </colgroup>
+                <caption>Tabeli caption</caption>
+                <tr>
+                    <th>See</th>
+                    <th>on</th>
+                </tr>
+                <tr>
+                    <th>väga</th>
+                    <th>ilus</th>
+                </tr>
+                <tr>
+                    tabel
+                </tr>
+            </table>
+                <em>	em tekstt</em>
+                    <strong>	strong tag ehk tähtis tekst</strong>
+                        <code>	code tag</code>
+                            <samp>	näidis programmi outputist</samp>
+                                <kbd>	klaviatuuri input</kbd>
+                                    <var>	muutuja</var>
+            <!-- hr tag -->
+            <hr>
+
+            <input list="autod">
+
+            <datalist id="autod">
+                <option value="honda">
+                <option value="toyota">
+                <option value="opel">
+                <option value="bmw">
+                <option value="audi">
+            </datalist>
+            <dl>
+                <dt>tagid</dt>
+                <dd>p ja b</dd>
+                <dt>scriptid</dt>
+                <dd>for FILE in *.flac; do ffmpeg -i "$FILE" -b:a 320k "${FILE[@]/%flac/mp3}"; done;</dd>
+            </dl>
+
+            <p>Mu lemmik värv on <del>sinine</del> <ins>must</ins>!</p>
+
+            <details>
+                <summary>Copyright 2050-2100.</summary>
+                <p> - by KHK. Kõik õigused reserveeritud.</p>
+                <p>KHK omand</p>
+            </details>
+
+            <p><dfn>HTML</dfn> on tavaline keel millega tehakse veebilehti</p>
+        </main>
+        <footer>
+            <b>bold tagid kasutuses
+            ja <dialog open>see on lahtine dialog aken</dialog></b>
+
+            <form action="demo_keygen.asp" method="get">
+                <fieldset>
+                    <legend>Regristreerimine:</legend>
+                    <label for="everybody">nimi: <input type="text"><br></label>
+                    email: <input type="text"><br>
+                    sünniaeg: <input type="text">
+                </fieldset>
+            </form>
+            <figure>
+                <img src="yoda.jpg" alt="Yoda" width="304" height="228">
+                <figcaption>Pilt 1. Pildil on kujutatud Yoda't</figcaption>
+            </figure>
+            <ul>
+                <li>listi</li>
+                <li>esimene</li>
+                <li>asi</li>
+            </ul>
+            <ol>
+                <li>ordered</li>
+                <li>list</li>
+            </ol>
+            <p>tavaline <mark>paragraph</mark>
+                <i>siit hakkab i tag</i>
+                tavaline paragraph läheb edasi
+            </p>
+            <iframe src="http://www.postimees.ee">
+            </iframe>
+            <kbd>kbd tag in action :DD</kbd>
+
+            <p>liigute, et muuta numbreid</p>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                <input type="range" id="a" value="50">100
+                +<input type="number" id="b" value="50">
+                =<output name="x" for="a b"></output>
+            </form>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <meter value="2" min="0" max="10">2 out of 10</meter><br>
+            <meter value="0.6">60%</meter>
+            <select>
+                <optgroup label="Aasia">
+                    <option value="jaapan">Jaapan</option>
+                    <option value="korea">Korea</option>
+                    <option value="hiina">Hiina</option>
+                </optgroup>
+                <optgroup label="Euroopa">
+                    <option value="eesti">Eesti</option>
+                    <option value="soome">Soome</option>
+                </optgroup>
+            </select>
+            <script>
+                document.write("JavaScripted!")
+            </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
+            <nav>
+                <a href="#">link 1</a> |
+                <a href="#">link 2</a> |
+                <a href="#">link 3</a> |
+                <a href="#">link 4</a>
+            </nav>
+
+        </footer>
+    </body>
+</html>
