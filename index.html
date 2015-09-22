@@ -73,7 +73,7 @@
         </ul>
             <button type="button">See on nupp</button>
             <canvas id="testCanvas">
-                Siin on tegemist canvas'ega
+                <section>Siin on tegemist canvas'ega</section>
             </canvas>
             <table border="1px solid black">
                 <colgroup>
@@ -82,21 +82,33 @@
                 </colgroup>
                 <caption>Tabeli caption</caption>
                 <tr>
+                    <thead>
                     <th>See</th>
                     <th>on</th>
-                </tr>
+                </tr></thead>
                 <tr>
                     <th>väga</th>
                     <th>ilus</th>
+                    <tbody>
+                <tr>
+                    <td>td tag</td>
+                    <td>üle 9000</td>
+                </tr></tbody>
+                <tfoot>
+                <tr>
+                    <td>järjekordne td tag</td>
+                    <td>alla 9000b</td>
+                </tr>
+                </tfoot>
                 </tr>
                 <tr>
                     tabel
                 </tr>
             </table>
                 <em>	em tekstt</em>
-                    <strong>	strong tag ehk tähtis tekst</strong>
+                    <strong>	<span style="color:blue">strong</span> tag ehk tähtis tekst</strong>
                         <code>	code tag</code>
-                            <samp>	näidis programmi outputist</samp>
+                            <samp>	näidis <q>programmi</q> outputist</samp>
                                 <kbd>	klaviatuuri input</kbd>
                                     <var>	muutuja</var>
             <!-- hr tag -->
@@ -113,12 +125,12 @@
             </datalist>
             <dl>
                 <dt>tagid</dt>
-                <dd>p ja b</dd>
+                <dd><small>p ja b</small></dd>
                 <dt>scriptid</dt>
                 <dd>for FILE in *.flac; do ffmpeg -i "$FILE" -b:a 320k "${FILE[@]/%flac/mp3}"; done;</dd>
             </dl>
 
-            <p>Mu lemmik värv on <del>sinine</del> <ins>must</ins>!</p>
+            <p>Mu <pre>lemmik</pre> värv on <del>sinine</del> <ins>must</ins>!</p>
 
             <details>
                 <summary>Copyright 2050-2100.</summary>
@@ -189,14 +201,55 @@
             <script>
                 document.write("JavaScripted!")
             </script>
-            <noscript>Your browser does not support JavaScript!</noscript>
+            <noscript>Your <s>browser</s> does not support JavaScript!</noscript>
             <nav>
                 <a href="#">link 1</a> |
                 <a href="#">link 2</a> |
                 <a href="#">link 3</a> |
                 <a href="#">link 4</a>
             </nav>
+            <object data="music.mp3">
+                <param name="autoplay" value="false">
+            </object>
+            <progress value="22" max="100"></progress>
+            <ruby>
+                漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+            </ruby>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the <wbr>audio</wbr> element.
+            </audio>
+                <strong>tugev tekst :3</strong>
 
+            <p>kasutab nüüd <sub>subscripti tagi</sub></p>
+            <p>nüüd aga kasutan <sup>superscripti tagi</sup></p>
+        <textarea rows="4" cols="50">
+Siin on nähe textarea tag kasutuses
+</textarea>
+            <p>kell on <time>09:56:05</time></p>
+
+            <!-- vaata üle -->
+            <video width="320" height="240" controls>
+                <source src="forrest_gump.mp4" type="video/mp4">
+                <source src="forrest_gump.ogg" type="video/ogg">
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+            </video>
+
+            <menu type="context" id="mymenu">
+                <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png">
+                </menuitem>
+                <menu label="Share on...">
+                    <menuitem label="Twitter" icon="ico_twitter.png"
+                              onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">
+                    </menuitem>
+                    <menuitem label="Facebook" icon="ico_facebook.png"
+                              onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">
+                    </menuitem>
+                </menu>
+                <menuitem label="Email This Page"
+                          onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+            </menu>
         </footer>
     </body>
 </html>
