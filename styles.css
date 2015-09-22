@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* body */
+body {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@font-face {
+    font-family: font;
+    src: url(google-fonts.com);
+}
+
+/* header */
+header {
+    color: blue;
+    opacity: 0.5;
+    background: green;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: green;
+    background-image: url("images/pilt.jpg");
+    background-position: center;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-size: 1000x 1000x;
+    border-bottom: 5px solid green;
+    border-bottom-right-radius: 2em;
+    display:inline;
+    width: 900px;
+    max-width: 900px;
+    min-width: 900px;
+    max-height: 12000px;
+    text-transform: capitalize;
+    white-space: nowrap;
+
+}
+
+header h1 {
+    font-family: ‘Metrophobic’, Arial, serif;
+    font-weight: 400;
+    font-size: 250%;
+    font-size-adjust: 0.60;
+}
+
+/* main */
+main {
+    border-top: dashed;
+    color: darkblue;
+    border-bottom-style: dotted;
+    border-bottom-width: 15px;
+    box-shadow: 10px 10px 10px #888888;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    overflow: visible;
+    overflow-y: hidden;
+    text-indent: 50px;
+}
+
+main p {
+    position: static;
+    margin-top: auto;
+    margin-left: 50px;
+    padding-left: 100px;
+    flex-wrap: wrap;
+}
+
+main img {
+    vertical-align: text-top;
+    z-index: -1;
+}
+
+main a{
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    color: black;
+    letter-spacing: 2px
+    word-break: break-all;
+    word-spacing: 6px;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+footer p{
+    hanging-punctuation: first;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+footer img {
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    bottom: 5px;
+    float: right;
+    clip: rect(0px, 10px, 10px 0px);
+    padding: inherit;
+    justify-content: space-around;
+
+}
+
+footer h1{
+    visibility: hidden;
+    line-height: 90%;
+    text-align: justify;
+    text-transform: uppercase;
+    text-shadow: 2px 2px blue;
+    font-stretched: expanded;
+    font-style: normal;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+footer p{
+    word-wrap: break-word;
+}
